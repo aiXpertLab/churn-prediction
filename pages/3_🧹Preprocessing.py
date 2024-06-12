@@ -42,10 +42,10 @@ if button("Data Loading and Editing", key="button1"):
         # # Convert 'Churn' categorical variable to numeric
         df['Churn'] = df['Churn'].replace({'No': 0, 'Yes': 1})
 
-        st.text(df[['TotalCharges', 'SeniorCitizen', 'Churn']])
+        st.code(df[['TotalCharges', 'SeniorCitizen', 'Churn']])
         st.divider()
 
-        if button("StratifiedShuffleSplit", key="button3"):
+        if button("StratifiedShuffleSplit", key="button2"):
        
             ################################################## StratifiedShuffleSplit ##################################################
             # Create the StratifiedShuffleSplit object
@@ -63,7 +63,7 @@ if button("Data Loading and Editing", key="button1"):
             X_test = strat_test_set.drop("Churn", axis=1)
             y_test = strat_test_set["Churn"].copy()
 
-            if button("Catboost", key="button4"):
+            if button("Catboost", key="button2"):
                 ################################################## CATBOOST ##################################################
                 st.code('# # Identify categorical columns')
 

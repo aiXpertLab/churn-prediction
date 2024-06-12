@@ -1,3 +1,4 @@
+# https://medium.com/@ramazanolmeez/end-to-end-machine-learning-project-churn-prediction-e9c4d0322ac9
 import streamlit as st
 from streamlit_extras.add_vertical_space import add_vertical_space
 
@@ -14,10 +15,10 @@ def st_logo():
     st.markdown("""
     <style>
         [data-testid="stSidebarNav"] {
-            background-image: url(https://hypech.com/images/logo/prediction.png);
-            background-size: 210px; /* Set the width and height of the image */
+            background-image: url(https://hypech.com/images/logo/aixpertlab_logo.png);
+            background-size: 300px; /* Set the width and height of the image */
             background-repeat: no-repeat;
-            padding-top: 80px;
+            padding-top: 150px;
             background-position: 15px 10px;
         }
     </style>
